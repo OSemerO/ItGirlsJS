@@ -1,0 +1,23 @@
+.body {
+    background-color: blueviolet;
+    };
+
+.wrapper {
+    margin-top: 20px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+};
+
+.btn1 {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: aqua;
+    font-size: 25px;
+};
+
+.calculator {
+    margin-left: 600px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+};
