@@ -1,0 +1,11 @@
+.title {
+    text-align: center;
+};
+
+.image {
+    background-image: url('https://demiart.ru/forum/uploads12/post-665947-1369591403.jpg');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 20px;
+  };

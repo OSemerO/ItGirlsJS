@@ -1,54 +1,31 @@
 'use strict'
-let cleanerSalary = 40000;
-let singerSalary = 22000;
-let cleanerSingSalary = cleanerSalary + singerSalary;
 
-console.log(cleanerSingSalary);
+function showMe () {
+console.log("Я учу JavaScript!");
+}
 
-let city = "Владивосток";
-let num = 2000;
-let song = city + " " + num;
+showMe();
 
-console.log(song);
+const show = () => console.log("Я учу JavaScript!");
 
-let messageTime = 128;
-let likeTime = 254;
-let vkTime = 137;
-let youtubeTime = 201;
-let rusalkaTime = messageTime + likeTime + vkTime + youtubeTime;
+show();
 
-console.log(rusalkaTime);
+const blockFoto = document.getElementByClass("image");
 
-let x = 2;
-let sum = x**5;
+const nextShow = () => {
+  blockFoto.style.backgroundImage = "url('https://old.bigenc.ru/media/2016/10/27/1235153355/3761.jpg')";
+  console.log(block);
+};
 
-console.log(sum);
+const backShow = () => {
+  blockFoto.style.backgroundImage = "url('https://sun9-76.userapi.com/impg/c_XdhklPf_RfWuTQr1I1wS8v7pSKkpW4hOMDwQ/UV3H6kXmZIY.jpg?size=807x534&quality=96&sign=138f5aca1360f4b1f3bc82a758a3e8cc&type=album')";
+  console.log(block);
+};
 
-console.log("Нужно бежать со всех ног, чтобы только оставаться на месте, а чтобы куда-то попасть, надо бежать как минимум вдвое быстрее!");
 
-const greetings = "Привет";
-const name = "Кот";
-
-alert(greetings + ", " + name);
-
-let time = "";
- time = 34;
-console.log('Старт поездки. Осталось минут: ' + time);
- time = 19;
- console.log('Немного сторис в соцсетях. Осталось минут: ' + time);
- time = 9;
- console.log( 'Немного не новостей, но событий. Осталось минут: ' + time);
- time = 0;
- console.log('Осталось минут ' + time + '.' + ' Вы приехали. Добро пожаловать в Москву!');
-
- let fahrenheit = 451;
- let celsius = (fahrenheit - 32) / 1.8;
-
- console.log(fahrenheit + ' градус по Фаренгейту - это ' + celsius + ' градуса по Цельсию.');
-
- 
- console.log(foo);
-
- let foo = "Cat";
- 
- console.log(foo);
+let year = 2023;
+if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)){
+    console.log('Високосный');
+} else {
+    console.log('Не високосный');
+};
