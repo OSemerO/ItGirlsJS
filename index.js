@@ -47,3 +47,8 @@ console.log('Старт поездки. Осталось минут: ' + time);
  console.log(fahrenheit + ' градус по Фаренгейту - это ' + celsius + ' градуса по Цельсию.');
 
  
+ console.log(foo);
+
+ let foo = "Cat";
+ 
+ console.log(foo);
