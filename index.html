@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Галерея</title>
-  <link rel="stylesheet" href="./Css/style.css">
-  <script src="/index.js"></script>
-</head>
-<body>
-  <h2 class="title">Совушки</h2>
-  <div class="image"></div>
-  <button onсlick="nextShow()">Следующая</button>
-  <button onсlick="backShow()">Предыдущая</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>кОтОлог</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="/index.js"></script>
+  </head>
+  <body class="page">
+    <main class="catalog page__catalog">
+      <article class="card">
+        <img src="https://klike.net/uploads/posts/2019-06/medium/1561011183_14.jpg" alt="" class="card__image" />
+        <div class="card__info card__info_theme_dark">
+          <h3 class="card__title">Стёпа</h3>
+          <p class="card__text">Пол: <span class='gender'>девочка</span></p>
+          <p class="card__text">Возраст: 16 мес.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://www.purina.ru/sites/default/files/2021-10/britanskaya-3.jpg" alt="" class="card__image" />
+        <div class="card__info card__info_theme_dark">
+          <h3 class="card__title">Стеша</h3>
+          <p class="card__text">Пол: девочка</p>
+          <p class="card__text">Возраст: 36 мес.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://www.belanta.vet/vet-blog/wp-content/uploads/2019/09/5-4.jpg" alt="" class="card__image" />
+        <div class="card__info card__info_theme_dark">
+          <h3 class="card__title">Тимофей</h3>
+          <p class="card__text">Пол: мальчик</p>
+          <p class="card__text">Возраст: 21 мес.</p>
+        </div>
+      </article>      
+    </main>
+  </body>
 </html>
