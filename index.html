@@ -3,107 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Корзина</title>
+    <title>Комментарии</title>
     <link rel="stylesheet" href="./Css/style.css">
-    <script src="/index.js" defer></script>
   </head>
   <body class="page">
-    <div class="shopping-cart">
-      <h2> Корзина</h2>
+    <div class="comments">
+      <h2> Комментарии</h2>
 
-      <div class="item">
-       
-        <div class="image">
-          <img id="picture" src="https://static.lichi.com/product/44819/a580825a26d663e82a7ebbc425c26f95.jpg?v=0_44819.0&resize=size-small" alt="" />
-        </div>
- 
-        <div class="description">
-          <span>Платье жакет мини с корсетом</span>
-          <span>Размер М</span>
-          <span>Белый</span>
-        </div>
- 
-        <div class="quantity">
-          <input type="text" name="name" value="1">
-        </div>
- 
-        <p class="price" id="box_price_id">
-          <span class="js-price1 js-price">7500</span>
-          руб
-        </p>
-      </div>
+      <form class="form">
+      <label>Введите ваше ФИО    <input type="text" id="url"></label>
+      <label>Введите ссылку вашего аватара  <input type="text" id="text"></label>
+      <label for="comment">Введите ваш комментарий</label>
+      <textarea required placeholder="Что думаете?" name="comment" id="comment"></textarea>
+      <button type="button" class="send">Отправить</button>
+    </form>
 
-      <div class="item">
-        <div class="image">
-          <img id="picture" src="https://static.lichi.com/product/40542/fd6e110142faf439b812d57cb6cb0900.jpg?v=0_40542.0&resize=size-small" alt=""/>
-        </div>
- 
-        <div class="description">
-          <span>Босоножки на высоком каблуке</span>
-          <span>Размер 39</span>
-          <span>Бежевый</span>
-        </div>
- 
-        <div class="quantity">
-          <input type="text" name="name" value="1">
-        </div>
- 
-        <p class="price" id="box_price_id">
-          <span class="js-price1 js-price">4700</span>
-          руб
-        </p>
-      </div>
-
-      <div class="item">
-        <div class="image">
-          <img id="picture" src="https://static.lichi.com/product/45064/10a3ac222049448ab300ea0ca0105a4b.jpg?v=0_45064.0&resize=size-small" alt=""/>
-        </div>
- 
-        <div class="description">
-          <span>Колье с жемчугом и стразами</span>
-          <span>Без размера</span>
-          <span>Серебристый</span>
-        </div>
- 
-        <div class="quantity">
-          <input type="text" name="name" value="1">
-        </div>
- 
-        <p class="price" id="box_price_id">
-          <span class="js-price1 js-price">1900</span>
-          руб
-        </p>
-      </div>
-
-      <div class="item">
-        <div class="image">
-          <img id="picture" src="https://static.lichi.com/product/45080/4725a21a6d2a91845e651cb024bac532.jpg?v=0_45080.0&resize=size-small" alt=""/>
-        </div>
- 
-        <div class="description">
-          <span>Колье с фиксатором</span>
-          <span>Без размера</span>
-          <span>Золотистый</span>
-        </div>
- 
-        <div class="quantity">
-          <input type="text" name="name" value="1">
-        </div>
-        
-        <p class="price" id="box_price_id">
-          <span class="js-price1 js-price">2100</span>
-          руб
-        </p>
-      </div>
-
-      <button class="discount">Получить скидку 15 %</button>
-
-      <p class="total-price">
-        Итого: <span id="total">16 200</span>
-          руб
-      </p>
+    <div class="comments__block"></div>
     </div>
     
 
   </body>
+  <script src="/index.js" defer></script>
 </html>
