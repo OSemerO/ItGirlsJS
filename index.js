@@ -1,14 +1,16 @@
-'use strict'
 
-// Найди карточку Стёпы в коде и запиши пол Стёпы в переменную 
-// Измени пол Стёпы на мужской используя метод textContent
 
-// пока не сделала
+let totalPriceElement = document.getElementById('total');
+let price = totalPriceElement.textContent; 
+console.log(price);
+const discount = document.querySelector(".discount"); //кнопка
 
-// console.log(location.href); // показывает текущий URL
-// if (confirm("Перейти на Wikipedia?")) {
-// 	// перенаправляет браузер на другой адрес
-//   location.href = "https://wikipedia.org"; 
-// }
+discount.addEventListener("click", () => {
+    totalPriceElement.textContent = +price - (+price * 15 / 100);});
+
+
+
+
+
 
 

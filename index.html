@@ -3,37 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>кОтОлог</title>
+    <title>Корзина</title>
     <link rel="stylesheet" href="./Css/style.css">
-    <script src="/index.js"></script>
+    <script src="/index.js" defer></script>
   </head>
   <body class="page">
-    <main class="catalog page__catalog">
-      <article class="card">
-        <img src="https://klike.net/uploads/posts/2019-06/medium/1561011183_14.jpg" alt="" class="card__image" />
-        <div class="card__info card__info_theme_dark">
-          <h3 class="card__title">Стёпа</h3>
-          <p class="card__text">Пол: <span class='gender'>девочка</span></p>
-          <p class="card__text">Возраст: 16 мес.</p>
+    <div class="shopping-cart">
+      <h2> Корзина</h2>
+
+      <div class="item">
+       
+        <div class="image">
+          <img id="picture" src="https://static.lichi.com/product/44819/a580825a26d663e82a7ebbc425c26f95.jpg?v=0_44819.0&resize=size-small" alt="" />
         </div>
-      </article>
-      <article class="card">
-        <img src="https://www.purina.ru/sites/default/files/2021-10/britanskaya-3.jpg" alt="" class="card__image" />
-        <div class="card__info card__info_theme_dark">
-          <h3 class="card__title">Стеша</h3>
-          <p class="card__text">Пол: девочка</p>
-          <p class="card__text">Возраст: 36 мес.</p>
+ 
+        <div class="description">
+          <span>Платье жакет мини с корсетом</span>
+          <span>Размер М</span>
+          <span>Белый</span>
         </div>
-      </article>
-      <article class="card">
-        <img src="https://www.belanta.vet/vet-blog/wp-content/uploads/2019/09/5-4.jpg" alt="" class="card__image" />
-        <div class="card__info card__info_theme_dark">
-          <h3 class="card__title">Тимофей</h3>
-          <p class="card__text">Пол: мальчик</p>
-          <p class="card__text">Возраст: 21 мес.</p>
+ 
+        <div class="quantity">
+          <input type="text" name="name" value="1">
         </div>
-      </article>    
-    </main>
-  
+ 
+        <p class="price" id="box_price_id">
+          <span class="js-price1 js-price">7500</span>
+          руб
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <img id="picture" src="https://static.lichi.com/product/40542/fd6e110142faf439b812d57cb6cb0900.jpg?v=0_40542.0&resize=size-small" alt=""/>
+        </div>
+ 
+        <div class="description">
+          <span>Босоножки на высоком каблуке</span>
+          <span>Размер 39</span>
+          <span>Бежевый</span>
+        </div>
+ 
+        <div class="quantity">
+          <input type="text" name="name" value="1">
+        </div>
+ 
+        <p class="price" id="box_price_id">
+          <span class="js-price1 js-price">4700</span>
+          руб
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <img id="picture" src="https://static.lichi.com/product/45064/10a3ac222049448ab300ea0ca0105a4b.jpg?v=0_45064.0&resize=size-small" alt=""/>
+        </div>
+ 
+        <div class="description">
+          <span>Колье с жемчугом и стразами</span>
+          <span>Без размера</span>
+          <span>Серебристый</span>
+        </div>
+ 
+        <div class="quantity">
+          <input type="text" name="name" value="1">
+        </div>
+ 
+        <p class="price" id="box_price_id">
+          <span class="js-price1 js-price">1900</span>
+          руб
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <img id="picture" src="https://static.lichi.com/product/45080/4725a21a6d2a91845e651cb024bac532.jpg?v=0_45080.0&resize=size-small" alt=""/>
+        </div>
+ 
+        <div class="description">
+          <span>Колье с фиксатором</span>
+          <span>Без размера</span>
+          <span>Золотистый</span>
+        </div>
+ 
+        <div class="quantity">
+          <input type="text" name="name" value="1">
+        </div>
+        
+        <p class="price" id="box_price_id">
+          <span class="js-price1 js-price">2100</span>
+          руб
+        </p>
+      </div>
+
+      <button class="discount">Получить скидку 15 %</button>
+
+      <p class="total-price">
+        Итого: <span id="total">16 200</span>
+          руб
+      </p>
+    </div>
+    
+
   </body>
 </html>
