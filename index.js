@@ -28,7 +28,7 @@ buttonElement.addEventListener("click", () => {
   const arrFio = text.split(" ");
 
   function checkedWord(word) {
-    return `${word.slice(0, 1).toUpperCase()}${word.slice(1).toLowerCase()} `;
+    return `${word.slice(0, 1).toUpperCase()}${word.slice(1).toLowerCase()}`;
   };
   
   let surname = checkedWord(arrFio[0]);
