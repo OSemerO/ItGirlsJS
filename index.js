@@ -6,7 +6,7 @@ console.log(price);
 const discount = document.querySelector(".discount"); //кнопка
 
 discount.addEventListener("click", () => {
-    totalPriceElement.textContent = +price - (+price * 15 / 100);});
+    totalPriceElement.textContent = +price - (+price * 20 / 100);});
 
 
 
