@@ -83,5 +83,5 @@ if (!urlElement.value) {
 
 /* обработчики событий на кнопку  */
 
-button.addEventListener('click', avatarRandom);
-button.addEventListener('click', commentChecked); 
+button.addEventListener('click', avatarRandom());
+button.addEventListener('click', commentChecked()); 
