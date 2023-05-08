@@ -5,34 +5,18 @@ let urlElement = document.getElementById("url_input").value;
 let commentElement = document.getElementById("message").value;
 let comment = commentElement.textContent;
 
-// находим кнопку
+// находим кнопку и место под вывод сообщений в чат
 const buttonElement = document.querySelector(".button");
 let chatElement = document.querySelector(".chat");
 
+// работа с датой
 
-// массив с аватарками для пользователя
-const arr = [
-  "https://disney-classic.ru/wp-content/uploads/2022-06-14_15-12-53-300x290.png",
-  "https://upload.wikimedia.org/wikipedia/ru/thumb/f/fe/James_P_Sullivan.jpg/280px-James_P_Sullivan.jpg",
-  "https://s0.rbk.ru/v6_top_pics/media/img/1/83/756079611261831.jpg",
-  "https://img.rl0.ru/afisha/-x-q85i/s2.afisha.ru/mediastorage/39/15/4d6179bcd85c4ea5a7c564111539.jpg",
-  "https://kartinkof.club/uploads/posts/2022-04/1649784841_1-kartinkof-club-p-rzhachnie-kartinki-osel-iz-shreka-1.jpg",
-  "https://cs13.pikabu.ru/post_img/2023/01/30/9/16750925851227285.jpg",
-];
+const commentDate = () => { 
+let date = new Date(); 
+document.querySelector('.date').innerText = date;        
+};
+commentDate(); 
 
-// навешиваем обработчик события на кнопку, с условием, что если поле URL пустое, произошла рандомная подстановка аватарки
-
-buttonElement.addEventListener("click", () => {
-  let url = "";
-  console.log(!urlElement.value);
-  if (!urlElement.value) {
-    const indexArr = Math.floor(Math.random() * 6);
-    console.log();
-    url = arr[indexArr];
-  } else {
-    url = urlElement.value;
-  }
-});
 
 // работаем с данными, что ввел пользователь - делаем массив 
 let userNameArr = nameElement.split(' ');   
@@ -71,3 +55,33 @@ document.querySelector('.message').innerHTML = `<div class="message__wrap">${com
 
 document.querySelector('.avatar').innerHTML = `<div class="avatar" img src="${avatar}">`; 
 
+/* функция для рандомного вывода аватарки */
+
+const avatarRandom = () => {
+  const avatar = document.getElementById('url_input');
+  const avatarValue = avatar.value;
+  if (avatarValue == "")  {
+    /* массив с аватарками для пользователя */
+  const arr = [
+  "https://disney-classic.ru/wp-content/uploads/2022-06-14_15-12-53-300x290.png",
+  "https://upload.wikimedia.org/wikipedia/ru/thumb/f/fe/James_P_Sullivan.jpg/280px-James_P_Sullivan.jpg",
+  "https://s0.rbk.ru/v6_top_pics/media/img/1/83/756079611261831.jpg",
+  "https://img.rl0.ru/afisha/-x-q85i/s2.afisha.ru/mediastorage/39/15/4d6179bcd85c4ea5a7c564111539.jpg",
+  "https://kartinkof.club/uploads/posts/2022-04/1649784841_1-kartinkof-club-p-rzhachnie-kartinki-osel-iz-shreka-1.jpg",
+  "https://cs13.pikabu.ru/post_img/2023/01/30/9/16750925851227285.jpg",
+];
+console.log(!urlElement.value);
+if (!urlElement.value) {
+  const indexArr = Math.floor(Math.random() * 6);
+  console.log();
+  url = arr[indexArr];
+} else {
+  url = urlElement.value;
+}
+}
+};
+
+/* обработчики событий на кнопку  */
+
+button.addEventListener('click', avatarRandom);
+button.addEventListener('click', commentChecked); 
