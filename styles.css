@@ -1,0 +1,27 @@
+.wrapper {
+margin: auto;
+max-width: fit-content;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: medium;
+}
+
+h2 {
+text-align: center;
+}
+
+.director__name {
+color: darkslategray;
+font-weight: 700;
+}
+
+.director__career {
+background-color: darkslategray;
+padding: 10px;
+color: antiquewhite;
+font-weight: 500;
+}
+
+.director__link {
+color: darkslategray;
+padding-bottom: 25px;
+}
