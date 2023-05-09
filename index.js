@@ -5,6 +5,10 @@ let urlElement = document.getElementById("url_input").value;
 let commentElement = document.getElementById("message").value;
 let comment = commentElement.textContent;
 
+console.log(nameElement);
+console.log(urlElement);
+console.log(commentElement);
+
 // находим кнопку и место под вывод сообщений в чат
 const buttonElement = document.querySelector(".button");
 let chatElement = document.querySelector(".chat");
