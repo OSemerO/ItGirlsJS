@@ -59,7 +59,7 @@ arrDirectors.forEach (function (item) {
 
 /* находим элемент для того, чтобы сделать переменную Лучшие фильмы */
 
-let topFilmsElement = document.querySelector('.director__bestfilms_list');
+let topFilmsElement = document.querySelector('.director__bestfilms');
 
 /* перебираем массив с помощью forEach и тут же добавляем в разметку */
 arrDirectors.forEach (function (item) {
